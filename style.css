@@ -21,6 +21,7 @@ body{
     .navbar-nav{
       position: absolute;
       margin-bottom: 150px;
+      margin-left: 150px;
     }
   }
 
@@ -150,3 +151,8 @@ transition: 1s;
  
  }
 
+ .immagineRotonda{
+  border-radius: 50%;
+ }
+
+ 
