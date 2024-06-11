@@ -12,19 +12,6 @@ body{
   font-style: normal;
 }
 
-/* ICONE NAV */
-/* @media screen and (min-width: 300px) and (max-width: 600px){
-  .iconeNav{
-    position: absolute;
-    
-  }
-  .navbar-nav{
-    
-  }
-  
-} */
-
-
 .spostareScritta{
   position: absolute;
   
@@ -144,4 +131,9 @@ transition: 1s;
   animation: rotate 2s linear ;
   
 }
+
+.navbar {
+  --bs-navbar-toggler-focus-width: none;
+ 
+ }
 
