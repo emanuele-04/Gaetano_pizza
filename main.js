@@ -27,17 +27,17 @@ const swiper = new Swiper(".mySwiper", {
 });
 
 
-let direction = 'right';
-const carouselTrack = document.querySelector('.rotazione');
+// let direction = 'right';
+// const carouselTrack = document.querySelectorAll('.rotazione', '.rotazione2');
 
-function switchDirection() {
-  if (direction === 'right') {
-    carouselTrack.style.animation = 'scroll-left 20s linear infinite';
-    direction = 'left';
-  } else {
-    carouselTrack.style.animation = 'scroll-right 20s linear infinite';
-    direction = 'right';
-  }
-}
+// function switchDirection() {
+//   if (direction === 'right') {
+//     carouselTrack.style.animation = 'scroll-left 20s linear infinite';
+//     direction = 'left';
+//   } else {
+//     carouselTrack.style.animation = 'scroll-right 20s linear infinite';
+//     direction = 'right';
+//   }
+// }
 
-setInterval(switchDirection, 20000);
+// setInterval(switchDirection, 20000);
