@@ -12,6 +12,7 @@ body{
   font-style: normal;
 }
 
+
 .spostareScritta{
   position: absolute;
   
@@ -22,7 +23,16 @@ body{
       position: absolute;
       margin-bottom: 150px;
       margin-left: 150px;
+      height: 100px;
     }
+
+    .icon{
+     color: blue;
+    }
+
+    .icon1{
+      color: rgb(124, 13, 13);
+     }
   }
 
   @media (min-width:900px ){
@@ -134,15 +144,29 @@ transition: 1s;
 
 @keyframes rotate {
   from {
-      transform: rotate(0deg);
+      transform: translateX(0);
   }
   to {
-      transform: rotate(360deg);
+      transform: translateX(-100%);
   }
 }
 
 .rotazione{
-  animation: rotate 2s linear ;
+  animation: rotate 20s linear infinite;
+  
+}
+
+@keyframes rotate2 {
+  from {
+      transform: translateX(-100%);
+  }
+  to {
+      transform: translateX(0);
+  }
+}
+
+.rotazione2{
+  animation: rotate2 20s linear infinite;
   
 }
 

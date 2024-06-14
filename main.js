@@ -25,3 +25,19 @@ const swiper = new Swiper(".mySwiper", {
     el: ".swiper-pagination",
   },
 });
+
+
+let direction = 'right';
+const carouselTrack = document.querySelector('.rotazione');
+
+function switchDirection() {
+  if (direction === 'right') {
+    carouselTrack.style.animation = 'scroll-left 20s linear infinite';
+    direction = 'left';
+  } else {
+    carouselTrack.style.animation = 'scroll-right 20s linear infinite';
+    direction = 'right';
+  }
+}
+
+setInterval(switchDirection, 20000);
