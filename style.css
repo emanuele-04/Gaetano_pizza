@@ -146,18 +146,18 @@ transition: 1s;
       transform: translateX(0);
   }
   to {
-      transform: translateX(10%);
+      transform: translateX(5%);
   }
 }
 
 .rotazione{
-  animation: rotate 20s linear infinite;
+  animation: rotate 5s infinite alternate;
   
 }
 
 @keyframes rotate2 {
   from {
-      transform: translateX(10%);
+      transform: translateX(5%);
   }
   to {
       transform: translateX(0);
@@ -165,9 +165,17 @@ transition: 1s;
 }
 
 .rotazione2{
-  animation: rotate2 20s linear infinite;
+  animation: rotate2 5s infinite alternate;
   
 }
+
+/* @media (max-width: 750px){
+  .rotazione{
+    animation: rotate 2s infinite alternate;
+  }
+  
+} */
+
 
 .navbar {
   --bs-navbar-toggler-focus-width: none;
@@ -177,6 +185,7 @@ transition: 1s;
  .immagineRotonda{
   border-radius: 50%;
  }
+
 
  
  
