@@ -27,6 +27,30 @@ const swiper = new Swiper(".mySwiper", {
 });
 
 
+const button = document.querySelector("#tornaSU")
+
+ button.addEventListener('click', function tornasu(){
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  })
+})
+
+  window.addEventListener("scroll", () => {
+    const scrollPosition = window.scrollY
+    const windowHeight = window.innerHeight
+    const scrollThreshold = 2
+
+    if(scrollPosition > windowHeight * scrollThreshold){
+      button.classList.remove("d-none")
+    }else{
+      button.classList.add("d-none")
+
+    }
+  })
+
+console.log(button);
+
 // let direction = 'right';
 // const carouselTrack = document.querySelectorAll('.rotazione', '.rotazione2');
 
