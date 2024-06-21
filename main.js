@@ -39,7 +39,7 @@ const button = document.querySelector("#tornaSU")
   window.addEventListener("scroll", () => {
     const scrollPosition = window.scrollY
     const windowHeight = window.innerHeight
-    const scrollThreshold = 2
+    const scrollThreshold = 1
 
     if(scrollPosition > windowHeight * scrollThreshold){
       button.classList.remove("d-none")
