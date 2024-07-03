@@ -32,6 +32,25 @@ body{
     .icon1{
       color: rgb(124, 13, 13);
      }
+
+     .dropdown{
+      position: absolute;
+      margin-top: 10px;
+      margin-right: 480px;
+      width: 30px;
+      display: flex;
+      justify-content: center;
+     }
+
+     .dropdown-menu.show {
+      display: flex;
+      width: 10px !important;
+  }
+  }
+
+
+  .dropdown{
+    margin-left: 600px;
   }
 
   @media (min-width:900px ){
@@ -155,6 +174,19 @@ transition: 1s;
   
 }
 
+@media (max-width: 750px){
+  .rotazione {
+    animation: none;
+  }
+}
+
+@media (max-width: 750px){
+  .rotazione2 {
+    animation: none;
+  }
+}
+
+
 @keyframes rotate2 {
   from {
       transform: translateX(5%);
@@ -188,3 +220,7 @@ transition: 1s;
 
 
  
+ .dropdown-menu {
+  --bs-border-width: 0 !important;
+  border-width: 0 !important; 
+}

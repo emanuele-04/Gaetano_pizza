@@ -65,3 +65,24 @@ console.log(button);
 // }
 
 // setInterval(switchDirection, 20000);
+
+
+
+// script.js
+document.addEventListener("DOMContentLoaded", function() {
+  const langSwitches = document.querySelectorAll(".lang-switch");
+  langSwitches.forEach(switchEl => {
+    switchEl.addEventListener("click", function(event) {
+      event.preventDefault();
+      const lang = event.target.getAttribute("data-lang");
+      switchLanguage(lang);
+    });
+  });
+
+  function switchLanguage(lang) {
+    const elements = document.querySelectorAll("[data-lang-en]");
+    elements.forEach(el => {
+      el.textContent = el.getAttribute(`data-lang-${lang}`);
+    });
+  }
+});
